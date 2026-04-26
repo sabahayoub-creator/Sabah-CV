@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabah Ayoub | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-gradient);
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease, border-color 0.4s ease;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05) rotate(3deg);
+            border-color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 0;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .job-title {
+            font-size: 22px;
+            color: #7f8c8d;
+            margin: 5px 0 20px 0;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.8s ease backwards;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="me.jpeg" alt="Sabah Ayoub" class="profile-img">
+        <h1>Sabah Ayoub</h1>
+        <p class="job-title">Programmer & Aspiring Web Developer</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>👤 Summary</h2>
+            <p>I have a deep passion for programming and technology. My ultimate goal is to become a professional web
+                developer, creating innovative digital solutions and mastering the art of modern web technologies.</p>
+        </div>
+
+        <div class="section">
+            <h2>🎓 Education & Courses</h2>
+            <ul>
+                <li><strong>University of Palestine:</strong> Faculty of Information Technology.</li>
+                <li><strong>Cyber Security:</strong> Specialized training in digital protection and safety.</li>
+                <li><strong>Java Programming:</strong> Mastery of core logic and object-oriented programming.</li>
+                <li><strong>Front-End Development:</strong> Building responsive and interactive user interfaces.</li>
+                <li><strong>English Language:</strong> Advanced communication and professional terminology.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎨 Hobbies & Interests</h2>
+            <ul>
+                <li><strong>Language Learning:</strong> I love exploring new cultures through their languages.</li>
+                <li><strong>Reading:</strong> An avid reader, constantly seeking knowledge through books.</li>
+                <li><strong>Technology Trends:</strong> Keeping up with the latest advancements in the IT world.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sabah Ayoub | Crafted with Code & Passion
+    </footer>
+
+</body>
+
+</html>
